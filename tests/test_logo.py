@@ -11,7 +11,7 @@ class TestLogo:
 
 
 
-    @allure.title("Тестирование клика по логотипу Самоката")
+    @allure.title("Тестирование клика по логотипу Самокат")
     def test_logo_samokat(self, driver):
         page = MainPage(driver)
         page.close_cookie_window()
@@ -19,6 +19,7 @@ class TestLogo:
         page.click_logo_samokat()
         assert driver.current_url == main_site
 
+    @allure.title("Тестирование клика по логотипу Яндекс")
     def test_logo_yandex(self, driver):
         page = MainPage(driver)
         page.close_cookie_window()
